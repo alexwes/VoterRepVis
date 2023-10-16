@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/topojson.v3.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<style>
+  input[type="range"] {
+    width: 70%;
+    margin: 0;
+    box-sizing: border-box;
+}
+datalist {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: -23px;
+    padding-top: 15px;
+}
+option {
+    width: 2ex;
+    display: flex;
+    justify-content: center;
+    height: 42px;
+    align-items: end;
+    height: 4ex;
+    background-position-y: -15px;
+    background-position-x: center;
+    z-index: -1;
+}
+
+
+</style>
+
+<body>
+
+  <h1 id="title"> Project 2: Voter Representation </h1>
+
+  <div id="viz-container" style="display: flex; flex-direction: row;">
+    <div id="mapWrapper">
+      <svg id="usmap" width="1000" height="900"> </svg>
+    </div>
+    <div id="hoverWrapper">
+      <h3 style="margin-left: 20px;">State Details</h3>
+      <svg id="sideinfo" width="450" height="400"></svg>
+    </div>
+  </div>
+  <div id="button-bar" style="display:inline">
+    <div class="slidecontainer">
+      <input type="range" min="1976" max="2020" class="slider" id="myRange" step = "4" list = "steplist" value = "1996">
+      <datalist id="steplist">
+        <option>1976</option>
+        <option>1980</option>
+        <option>1984</option>
+        <option>1988</option>
+        <option>1992</option>
+        <option>1996</option>
+        <option>2000</option>
+        <option>2004</option>
+        <option>2008</option>
+        <option>2012</option>
+        <option>2016</option>
+        <option>2020</option>
+    </datalist>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

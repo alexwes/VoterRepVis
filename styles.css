@@ -1,0 +1,41 @@
+.state {
+  fill: lightgrey;
+}
+
+.state-outline {
+  fill: none;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.graticule {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1px;
+}
+
+.tooltip {
+  pointer-events: none;
+}
+
+#title {
+  text-align: center;
+}
+
+#mapWrapper {
+  text-align: center;
+}
+
+svg#usmap {
+  border-style: solid;
+  border-color: black;
+
+}
+
+.red{
+  fill: red;
+}
+
+.blue{
+  fill: blue;
+}
